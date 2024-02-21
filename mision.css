@@ -1,0 +1,326 @@
+/* Estilos generales para la página */
+body {
+    background-color: #ffffffe5;
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para la barra superior */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #fff;
+    color: rgba(2, 2, 2, 0.623);
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 2px 2%;
+    margin: -20px auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-top img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-top .logo {
+    font-size: 24px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.header-top .top-nav {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.header-top .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-top .top-nav ul li {
+    margin-left: 20px;
+}
+
+.header-top .top-nav ul li a {
+    text-decoration: none;
+    color: #35b41c;
+    font-weight: bold;
+}
+
+
+ /* Estilos para el menú desplegable */
+ .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para la barra inferior */
+.header-bottom {
+    background-image: url('http://localhost/VIVERO/img/encabezadoo.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bottom .logo {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 5%;
+}
+
+.header-bottom img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+
+
+
+
+.header-bottom .top-nav {
+    flex-grow: 1;
+    margin-left:25%;
+}
+
+/* Estilos para el slider */
+.slider-container {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+    max-width: none; /* Eliminado el máximo ancho para que sea ilimitado */
+    margin: -65px auto 1%; /* Centrar la barra y ajustar el margen superior */
+
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%; /* Añadido para ocupar todo el ancho */
+}
+
+.slide {
+    top:-50px;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    
+    width: 100%;
+    height: 450px;
+    
+    border-radius: 7px; /* Añadido para redondear las esquinas de las imágenes */
+}
+
+
+.center {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0; /* Añadido para colocar encima de la imagen */
+ 
+
+}
+.cboton{
+    background-color: #813b3f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.slide-button {
+    background-color: #fffcfc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.slider-nav {
+    position: absolute;
+    z-index: 1; /* Añadido para colocar encima de la imagen */
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-nav button {
+    background-color: #fffdfd00;
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Estilos para botones */
+.facebook {
+    background-color: #25d366;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.location {
+    background-color: #25d366;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Estilos para las secciones Mision y Vision */
+.mision,
+.vision {
+    max-width: 96%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:rgba(231, 235, 228, 0.329);
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+   
+    border-radius: 5px;
+}
+
+h1{
+    color: #ffffff;
+}
+h2,
+p {
+    color: #000000;
+}

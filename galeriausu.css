@@ -1,0 +1,258 @@
+body {
+    background-color: #3f383815;
+    background-image: url(''); /* Reemplaza 'img/encabezado.jpeg' con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para la barra superior */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: rgba(2, 2, 2, 0.623);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 2px 5%;
+    margin: -20px auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-top img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-top .logo {
+    font-size: 24px;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.header-top .top-nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header-top .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-top .top-nav ul li {
+    margin-left: 20px;
+}
+
+.header-top .top-nav ul li a {
+    text-decoration: none;
+    color: #35b41c;
+    font-weight: bold;
+}
+
+/* Estilos para la barra inferior */
+.header-bottom {
+    background-image: url('http://localhost/VIVERO/img/encabezadoo.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bottom .logo {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 5%;
+}
+
+.header-bottom img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-bottom .text-content {
+    flex-grow: 4;
+    text-align: left;
+}
+
+.header-bottom .text-content h1 {
+    font-size: 28px;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.header-bottom .top-nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header-bottom .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-bottom .top-nav ul li {
+    margin-left: 20px;
+}
+
+.header-bottom .top-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Estilos para botones */
+.facebook,
+.whatsapp,
+.location {
+    background-color: #25d366;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Estilos para el titulo galeria ----------------- */
+
+.titulo {
+    width: 100%; /* Hacer que el div ocupe todo el ancho horizontal */
+    margin: -55px auto 1%; /* Centrar la barra y ajustar el margen superior */
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+h2,h3,
+p {
+    color: #25d366;
+}
+/* Estilos para la galería de imágenes */
+.divcontent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.product {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px;
+    position: relative;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.divcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #ccc;
+}
+
+.divinfo {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.divnombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-editar {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #81e424;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-eliminar {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+}

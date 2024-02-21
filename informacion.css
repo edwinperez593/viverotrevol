@@ -1,0 +1,251 @@
+body {
+    background-color:rgba(246, 247, 246, 0.329);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url(''); /* Reemplaza 'img/encabezado.jpeg' con la ruta correcta de tu imagen */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Estilos para la barra superior */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #fff;
+    color: rgba(2, 2, 2, 0.623);/* --------------------------------Reducción de difuminacion del contactanos */
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 2px 2%; /* Reducción del 20% a cada lado */
+    margin: -30px auto 0; /* Centrar la barra y ajustar el margen superior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-top img {
+    max-width: 40%; /* Reducción del tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-top .logo {
+    font-size: 24px;
+    color: #000000;
+    margin-left: 10px; /* Ajuste del margen para alinear con los botones */
+}
+
+.header-top .top-nav {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.header-top .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; /* Quitamos el padding que estaba afectando el espaciado entre los botones */
+    display: flex; /* Cambiamos a flexbox para alinear los botones horizontalmente */
+    justify-content: flex-end; /* Alineamos los botones a la derecha */
+    align-items: center; /* Alineamos verticalmente en el centro */
+}
+
+.header-top .top-nav ul li {
+    margin-left: 20px;
+}
+
+.header-top .top-nav ul li a {
+    text-decoration: none;
+    color: #35b41c;/* -----------color de botones Barra superior-----------*/
+    font-weight: bold;
+}
+
+ /* Estilos para el menú desplegable */
+ .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Estilos para la barra inferior */
+.header-bottom {
+    background-image: url('http://localhost/VIVERO/img/encabezadoo.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bottom .logo {
+    font-size: 70px;
+    color: #fff;
+    margin-left: 4%;
+}
+
+.header-bottom img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-bottom .text-content {
+    flex-grow: 4;
+    text-align: left;
+}
+
+.header-bottom .text-content h1 {
+    font-size: 28px;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.header-bottom .top-nav {
+    flex-grow: 1;
+    margin-right: 20px ;/* Estilos para margen de correos yahooo--------- */
+}
+
+.header-bottom .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-bottom .top-nav ul li {
+    margin-left: 20px;
+}
+
+.header-bottom .top-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Estilos para botones */
+.facebook,
+.whatsapp,
+.location {
+    background-color: #25d366;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+
+/* Estilos para el contenedor principal */
+.contai {
+    display: flex;
+}
+
+/* Estilos para la sección de información */
+.informacion {
+    
+    background-color: rgba(228, 228, 228, 0.534);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #000000;
+    margin-right: 10px; /* Agregar un margen entre las secciones */
+}
+
+/* Estilos para la sección de mapas */
+.maps {
+   
+    background-color: rgba(238, 238, 238, 0.534);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+}
+.image{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+h1,
+h2,
+p {
+    color: #000000;
+    font-size: 100%;
+
+}
+
